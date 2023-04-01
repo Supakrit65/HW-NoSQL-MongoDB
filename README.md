@@ -99,7 +99,7 @@ output:
 #### Find the top two subjects based on average marks.
 MongoDB statements:
 ```SQL
-db.students.aggregate([{$group: {_id: '$subject', average_marks: {$avg: '$marks'}}}, {'$sort': {average_marks: -1}},{'$limit': 2}])
+db.students.aggregate([{$group: {_id: '$subject', average_marks: {$avg: '$marks'}}}, {'$sort': {average_marks: -1}}, {'$limit': 2}])
 ```
 output:
 ```SQL
